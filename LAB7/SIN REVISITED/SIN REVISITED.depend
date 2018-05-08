@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1480706621 source:c:\users\moon\desktop\mine\new-c\lab7\sin revisited\main.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+

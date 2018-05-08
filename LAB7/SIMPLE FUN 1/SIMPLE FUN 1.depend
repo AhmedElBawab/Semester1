@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1480710549 source:c:\users\moon\desktop\mine\new-c\lab7\simple fun 1\main.c
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+

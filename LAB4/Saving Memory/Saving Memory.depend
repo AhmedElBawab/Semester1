@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1477774579 source:c:\users\moon\desktop\mine\new-c\lab4\saving memory\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1481394324 source:c:\users\moon\desktop\mine\new-c\lab8\count words 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

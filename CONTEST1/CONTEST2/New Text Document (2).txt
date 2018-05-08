@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+long long sumOfElements(int arr[], int n){
+    long long i,sum=0;
+    for(i=0; i<n; i++){
+        sum+=arr[i];
+    }
+    return sum;
+}
+
+long long numberOfBits(long long n){
+    long long i=0;
+    while(n/=2){     
+            i++;
+    }
+    return i;
+}
+
+int main() {
+
+    int t,i,j,x;
+    scanf("%d",&t);
+    for(i=0; i<t; i++){
+        int n,c=1;
+        scanf("%d",&n);
+        int arr[n];
+        for(x=0; x<n; x++){
+            scanf("%d",&arr[x]);
+        }
+        long long sum = sumOfElements(arr,n);
+        int NofB = numberOfBits(sum);
+        for(x=0; x<NofB; x++){
+            c += sum%2;
+            sum /= 2;
+        }
+        printf("%d\n",c);
+    }
+    return 0;
+}

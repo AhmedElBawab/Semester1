@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1478335458 source:c:\users\moon\desktop\mine\new-c\lab5\sinx2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

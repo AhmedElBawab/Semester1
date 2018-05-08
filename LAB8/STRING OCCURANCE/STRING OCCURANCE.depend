@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1481397390 source:c:\users\moon\desktop\mine\new-c\lab8\string occurance\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

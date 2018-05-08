@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define PI 3.14159265358979323846
+
+//functions prototypes (declaration)
+double angleInRad(double angleInDegree);
+long long int factorial(int k);
+double power(double n,int m);
+double sine(double angleInDegree,int nOfTerms);
+
+//main function
+int main(void) {
+    
+    double x;                   //angle in degree
+    int n;                      //number of terms of the formula
+    scanf("%lf %d",&x,&n);      
+    printf("calculated %.10lf expected %.10lf",sine(x,n)/*calculated*/ ,sin(angleInRad(x))/*expected*/);
+
+    return 0;
+}
+
+
+//Functions definitions
+
+//convert angle from degree to rad
+double angleInRad(double angleInDegree)
+    {
+        return (angleInDegree*PI)/180;
+    }
+    
+    
+//calculate factorial k
+long long int factorial(int k)
+    {
+        int i;                   //counter
+        long long int result=1;
+        for(i=k;i>0;i--)
+            {
+                result*=i;
+            }
+        return result;
+    }
+
+    
+//calculate n to the power of m
+double power(double n,int m)      //n is the number,m is the power
+    {
+        double result=1;
+        int i;                    //counter
+        for(i=0;i<m;i++)
+        {
+            result*=n;
+        }
+        return result;
+    }
+    
+    
+//calculate the sine of angle
+double sine(double angleInDegree,int nOfTerms)
+    {
+        double result=0;
+        int i;                  //counter
+        int s=1;                //sign of term
+        int k=1;
+        for(i=0;i<nOfTerms;i++)
+        {
+            result += ( ( s * power(angleInRad(angleInDegree),k) ) / factorial(k) );
+            s = -s;
+            k+=2;
+        }
+        return result;
+    }

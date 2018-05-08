@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1481831484 source:c:\users\moon\desktop\mine\new-c\mine sweeper\interface\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+
